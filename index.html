@@ -634,55 +634,7 @@ new Chart(document.getElementById('donutChart'),{
 // Resume download
 function downloadResume(e){
   e.preventDefault();
-  const txt=`RASEEN NAVEETH HAMEED SULTHAN
-Cybersecurity Engineer | SOC Analyst | IT Support
-Dubai, UAE | raseennaveeth@gmail.com
-
-EDUCATION
-B.E Computer Science Engineering (Cybersecurity)
-Sathyabama Institute of Science and Technology, Chennai
-Graduating: April 2026
-
-PUBLICATIONS
-IEEE ICSSS 2025 | Paper ID: ICSSS25CYB052
-"ShadowNet: A Deceptive Active Directory Honeypot for Detecting Targeted Intrusions using Splunk"
-
-KEY PROJECTS
-1. ShadowNet — AD Honeypot + Splunk SIEM (IEEE Published)
-   - 2.4s detection latency | 0 false positives | 100% accuracy
-   - Tech: Splunk, Sysmon, Windows Server 2022, VMware, MITRE ATT&CK
-
-2. IonDrive — USB HID Attack Tool (Digispark ATtiny85)
-3. Btrfs File Recovery — Digital Forensics Tool
-4. Phishing Emulator — Red Team / Awareness Training
-5. Packet Morphing — IDS Evasion Research
-6. Wi-Fi Deauth Tool — Java GUI (Kali Linux)
-7. ShadowWatch — SOC Dashboard (Portfolio)
-8. DeepFake Bypass vs Detection — AI + Security
-9. Fake AD Honeypot System — Deception Framework
-
-SKILLS
-- SIEM: Splunk Enterprise, Sysmon v15, Windows Event Logs
-- Security: MITRE ATT&CK, Kerberoasting, Lateral Movement, Brute-force
-- Tools: Nmap, Impacket, BloodHound, Hydra, Scapy, Wireshark
-- Hardware: Digispark ATtiny85, USB HID, PowerShell, VBS
-- Dev: Python, Java, PowerShell, SPL, HTML/CSS/JS, Bash
-- Platforms: Windows Server 2022, Kali Linux, VMware, Ubuntu
-
-EXPERIENCE
-Freelance IT Support Engineer | Dubai, UAE | 2022 - Present
-- Hardware diagnostics, OS installation, network config, AD management
-- On-site and remote support for multiple clients across Dubai
-
-CERTIFICATIONS & ACHIEVEMENTS
-- IEEE Published Researcher (2025)
-- Final Year Project: ShadowNet (Distinction)`;
-
-  const blob=new Blob([txt],{type:'text/plain'});
-  const url=URL.createObjectURL(blob);
-  const a=document.createElement('a');
-  a.href=url;a.download='Raseen_Naveeth_Resume.txt';a.click();
-  URL.revokeObjectURL(url);
+  window.open('Raseen_Resume.pdf', '_blank');
 }
 
 // Writeups
